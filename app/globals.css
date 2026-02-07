@@ -2,3 +2,16 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+.sky-bg {
+  background-color: #5aa9ff;
+  background-image: linear-gradient(
+      180deg,
+      rgba(20, 86, 140, 0.55) 0%,
+      rgba(70, 155, 210, 0.35) 45%,
+      rgba(140, 210, 245, 0.2) 100%
+    ),
+    url("/images/backgrounds/sunny.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

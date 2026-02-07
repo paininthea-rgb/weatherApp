@@ -63,7 +63,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-400 to-purple-600">
+    <div className="sky-bg min-h-screen flex items-center justify-center">
       <div className="text-white">
       <h1 className="mb-4 text-2xl font-bold">Weather App</h1>
       <form className="flex gap-2 mb-4" onSubmit={fetchWeather}>
