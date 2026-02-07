@@ -52,8 +52,9 @@ export default function Home() {
 
       const data = (await response.json()) as WeatherData | WeatherErrorResponse;
 
-      if (!response.ok || "error" in data) {
-        throw new Error(data?.error?.message || "City not found");
+      if (!response.ok) {
+        const errorData = data as WeatherErrorResponse;
+        throw new Error(errorData?.error?.message || "City not found");
       }
 
       setWeather(data as WeatherData);
